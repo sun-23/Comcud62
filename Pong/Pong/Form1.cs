@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media; // for sound
 
 namespace Pong
 {
@@ -74,6 +75,7 @@ namespace Pong
                 {
                     isBallRight = true;
                 }
+                PlaySound("8bit.wav", true);
                 //isBallDown = false;
                 //isBallUp = false;
             }
@@ -116,6 +118,7 @@ namespace Pong
                 isBallRight = false;
                 isBallOut = true;
                 Score(false); // p2 + 1
+                PlaySound("GameOver.wav",false);
             }
             else if (Ball.Location.X >= Paddle2.Location.X + Paddle2.Width && Ball.Location.Y <= Paddle2.Location.Y || Ball.Location.X >= Paddle2.Location.X + Paddle2.Width && Ball.Location.Y >= Paddle2.Location.Y + Paddle2.Height)
             {
@@ -124,6 +127,7 @@ namespace Pong
                 isBallRight = false;
                 isBallOut = true;
                 Score(true); // p1 + 1
+                PlaySound("GameOver.wav",false);
             }
             else if(Ball.Location.Y <= 0)
             {
@@ -136,6 +140,20 @@ namespace Pong
                 //Ball postitionY is From Height then Ball go Up
                 isBallDown = false;
                 isBallUp = true;
+            }
+        }
+
+        //PlaySound
+        void PlaySound(string name, bool isloop)
+        {
+            SoundPlayer s = new SoundPlayer(@"Sound\"+name);
+            if (isloop)
+            {
+                s.PlayLooping();
+            }
+            else
+            {
+                s.Play();
             }
         }
 
@@ -174,6 +192,7 @@ namespace Pong
         private void Form1_Load(object sender, EventArgs e)
         {
             isBallRight = true;
+            PlaySound("8bit.wav",true);
         }
 
         // KeyDown
