@@ -60,7 +60,8 @@ namespace Pong
             else if (isRight)
             {
                 positionBallX = 10; //ball go right
-            }else if (isOut)
+            }
+            else if (isOut)
             {
                 //set ball center
                 positionBallX = Width/2 - Ball.Location.X;
@@ -75,9 +76,9 @@ namespace Pong
                 {
                     isBallRight = true;
                 }
-                PlaySound("8bit.wav", true);
                 //isBallDown = false;
                 //isBallUp = false;
+                
             }
 
             if (isBallUp)
@@ -111,14 +112,15 @@ namespace Pong
                 isBallOut = false;
                 RandomYAxis();
             }
-            else if (Ball.Location.X <= Paddle1.Location.X + Paddle1.Width && Ball.Location.Y <= Paddle1.Location.Y || Ball.Location.X <= Paddle1.Location.X + Paddle1.Width && Ball.Location.Y >= Paddle1.Location.Y + Paddle1.Height)
+            else if (Ball.Location.X <= Paddle1.Location.X - Paddle1.Width && Ball.Location.Y <= Paddle1.Location.Y || Ball.Location.X <= Paddle1.Location.X - Paddle1.Width && Ball.Location.Y >= Paddle1.Location.Y + Paddle1.Height)
             {
                 //ball out of paddle 1
                 isBallLeft = false;
                 isBallRight = false;
                 isBallOut = true;
                 Score(false); // p2 + 1
-                PlaySound("GameOver.wav",false);
+                PlaySound("GameOver.wav");
+                PlaySound("8bit.wav");
             }
             else if (Ball.Location.X >= Paddle2.Location.X + Paddle2.Width && Ball.Location.Y <= Paddle2.Location.Y || Ball.Location.X >= Paddle2.Location.X + Paddle2.Width && Ball.Location.Y >= Paddle2.Location.Y + Paddle2.Height)
             {
@@ -127,7 +129,8 @@ namespace Pong
                 isBallRight = false;
                 isBallOut = true;
                 Score(true); // p1 + 1
-                PlaySound("GameOver.wav",false);
+                PlaySound("GameOver.wav");
+                PlaySound("8bit.wav");
             }
             else if(Ball.Location.Y <= 0)
             {
@@ -144,17 +147,10 @@ namespace Pong
         }
 
         //PlaySound
-        void PlaySound(string name, bool isloop)
+        void PlaySound(string name)
         {
             SoundPlayer s = new SoundPlayer(@"Sound\"+name);
-            if (isloop)
-            {
-                s.PlayLooping();
-            }
-            else
-            {
-                s.Play();
-            }
+            s.Play();
         }
 
         //Score
@@ -192,7 +188,7 @@ namespace Pong
         private void Form1_Load(object sender, EventArgs e)
         {
             isBallRight = true;
-            PlaySound("8bit.wav",true);
+            PlaySound("8bit.wav");
         }
 
         // KeyDown
