@@ -13,7 +13,8 @@ namespace Pong
     public partial class Form1 : Form
     {
 
-        bool isP1Up, isP1Down, isP2Up, isP2Down, isBallLeft, isBallRight, isBallUp, isBallDown, isBallOut;
+        bool isP1Up, isP1Down, isP2Up, isP2Down;
+        bool isBallLeft, isBallRight, isBallUp, isBallDown, isBallOut;
         int p1score = 0, p2score = 0;
 
         public Form1()
