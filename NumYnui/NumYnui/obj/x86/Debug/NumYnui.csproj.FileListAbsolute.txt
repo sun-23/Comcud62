@@ -1,0 +1,14 @@
+C:\Users\Admin\AppData\Local\Temporary Projects\NumYnui\obj\x86\Debug\NumYnui.Form1.resources
+C:\Users\Admin\AppData\Local\Temporary Projects\NumYnui\obj\x86\Debug\NumYnui.Properties.Resources.resources
+C:\Users\Admin\AppData\Local\Temporary Projects\NumYnui\obj\x86\Debug\NumYnui.csproj.GenerateResource.Cache
+C:\Users\Admin\AppData\Local\Temporary Projects\NumYnui\bin\Debug\NumYnui.exe
+C:\Users\Admin\AppData\Local\Temporary Projects\NumYnui\bin\Debug\NumYnui.pdb
+C:\Users\Admin\AppData\Local\Temporary Projects\NumYnui\obj\x86\Debug\NumYnui.exe
+C:\Users\Admin\AppData\Local\Temporary Projects\NumYnui\obj\x86\Debug\NumYnui.pdb
+C:\Users\Admin\Desktop\C#\NumYnui\NumYnui\obj\x86\Debug\NumYnui.exe
+C:\Users\Admin\Desktop\C#\NumYnui\NumYnui\obj\x86\Debug\NumYnui.pdb
+C:\Users\Admin\Desktop\C#\NumYnui\NumYnui\bin\Debug\NumYnui.exe
+C:\Users\Admin\Desktop\C#\NumYnui\NumYnui\bin\Debug\NumYnui.pdb
+C:\Users\Admin\Desktop\C#\NumYnui\NumYnui\obj\x86\Debug\NumYnui.Form1.resources
+C:\Users\Admin\Desktop\C#\NumYnui\NumYnui\obj\x86\Debug\NumYnui.Properties.Resources.resources
+C:\Users\Admin\Desktop\C#\NumYnui\NumYnui\obj\x86\Debug\NumYnui.csproj.GenerateResource.Cache
