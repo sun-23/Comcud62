@@ -63,7 +63,16 @@ namespace Pong
                 //set ball center
                 positionBallX = Width/2 - Ball.Location.X;
                 positionBallY = Height / 2 - Ball.Location.Y;
-                isBallLeft = true; // runball again
+                // runball again
+                bool myRandomBoolUp = new Random().Next(100) <= 50 ? true : false;
+                if (myRandomBoolUp)
+                {
+                    isBallLeft = true;
+                }
+                else
+                {
+                    isBallRight = true;
+                }
                 //isBallDown = false;
                 //isBallUp = false;
             }

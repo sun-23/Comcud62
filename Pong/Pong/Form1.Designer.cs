@@ -78,6 +78,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(221, 22);
             this.label1.Name = "label1";
@@ -88,6 +89,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(460, 22);
             this.label2.Name = "label2";
@@ -98,6 +100,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(381, 53);
             this.label3.Name = "label3";
@@ -108,6 +111,7 @@
             // P1Label
             // 
             this.P1Label.AutoSize = true;
+            this.P1Label.BackColor = System.Drawing.Color.Transparent;
             this.P1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.P1Label.Location = new System.Drawing.Point(257, 83);
             this.P1Label.Name = "P1Label";
@@ -118,6 +122,7 @@
             // P2Label
             // 
             this.P2Label.AutoSize = true;
+            this.P2Label.BackColor = System.Drawing.Color.Transparent;
             this.P2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.P2Label.Location = new System.Drawing.Point(495, 83);
             this.P2Label.Name = "P2Label";
