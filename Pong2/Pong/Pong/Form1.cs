@@ -18,6 +18,7 @@ namespace Pong
         bool isBallLeft, isBallRight, isBallUp, isBallDown, isBallOut; // ball
         int p1score = 0, p2score = 0; // score
         int level = 0; //speed ball
+        bool isGameStop;
 
         public Form1()
         {
@@ -31,10 +32,11 @@ namespace Pong
             DoMove(isP2Up, isP2Down, paddle2);//move paddle2
             CheckMoveBall(aBall, paddle1, paddle2); //Check Move Ball
             MoveBall(aBall,isBallLeft,isBallRight,isBallOut,isBallDown,isBallUp); //move ball
-            CheckScore();
+            CheckScore();//Check score
+            StopGame();//CheckGame is Stop
         }
 
-        //Domove
+        //DomovePaddle
         void DoMove(bool isUp,bool isDown, PictureBox paddle)
         {
             int position_y = 0;
@@ -54,6 +56,7 @@ namespace Pong
         //MoveBall
         void MoveBall(PictureBox Ball, bool isLeft, bool isRight, bool isOut, bool isDown, bool isUp)
         {
+            //position to move from before position
             int positionBallX = 0;
             int positionBallY = 0;
 
@@ -109,7 +112,7 @@ namespace Pong
                 isBallLeft = true;
                 isBallOut = false;
                 level += 5;
-                RandomYAxis();
+                RandomYAxis(); //random YAxis
             }
             else if (Ball.Location.X <= Paddle1.Location.X + Paddle1.Width && Ball.Location.Y >= Paddle1.Location.Y && Ball.Location.Y <= Paddle1.Location.Y + Paddle1.Height)
             {
@@ -118,7 +121,7 @@ namespace Pong
                 isBallRight = true;
                 isBallOut = false;
                 level += 5;
-                RandomYAxis();
+                RandomYAxis(); //random YAxis
             }
             else if (Ball.Location.X <= Paddle1.Location.X - Paddle1.Width && Ball.Location.Y <= Paddle1.Location.Y || Ball.Location.X <= Paddle1.Location.X - Paddle1.Width && Ball.Location.Y >= Paddle1.Location.Y + Paddle1.Height)
             {
@@ -166,28 +169,32 @@ namespace Pong
         //CheckScore
         void CheckScore()
         {
-            if (p1score == 2)
+            if (p1score == 7)
             {
                 Reset();
                 aTimerPaddle.Enabled = false; //stop timer
                 Form2 f2 = new Form2();
-                f2.Show(); // show form2
                 MessageBox.Show("P1 WIN!!!!");
+                f2.ShowDialog(); // show form2 waiting form 2 close timer play
+                aTimerPaddle.Enabled = true;//play timer
             }
-            else if (p2score == 2)
+            else if (p2score == 7)
             {
                 Reset();
                 aTimerPaddle.Enabled = false;//stop timer
                 Form2 f2 = new Form2();
-                f2.Show(); // show form2
                 MessageBox.Show("P2 WIN!!!!");
+                f2.ShowDialog(); // show form2 waiting form 2 close timer play
+                aTimerPaddle.Enabled = true;//play timer
             }
         }
 
         //Reset
         void Reset()
         {
+            // setlevel speedball
             level = 0;
+            //set score
             p1score = 0;
             p2score = 0;
             P1Label.Text = p1score.ToString(); //setlabel
@@ -253,13 +260,29 @@ namespace Pong
                     break;
                 case Keys.S:
                     isP1Down = isPresse;
-                break;
+                    break;
                 case Keys.Up:
                     isP2Up = isPresse;
-                break;
+                    break;
                 case Keys.Down:
                     isP2Down = isPresse;
-                break;
+                    break;
+                case Keys.G:
+                    isGameStop = isPresse;
+                    break;
+            }
+        }
+
+        //StopGame
+        void StopGame()
+        {
+            if (isGameStop)
+            {
+                aTimerPaddle.Enabled = false;//stop timer
+                Form2 f2 = new Form2();
+                f2.ShowDialog(); // show form2 waiting form 2 close timer play
+                isGameStop = false;// set is Game stop = false
+                aTimerPaddle.Enabled = true;//play timer
             }
         }
     }
