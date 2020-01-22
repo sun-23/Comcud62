@@ -32,3 +32,13 @@ C:\Users\LABCOM\Desktop\Comcud62-master\Pong\Pong\obj\Debug\Pong.Form1.resources
 C:\Users\LABCOM\Desktop\Comcud62-master\Pong\Pong\obj\Debug\Pong.Properties.Resources.resources
 C:\Users\LABCOM\Desktop\Comcud62-master\Pong\Pong\obj\Debug\Pong.csproj.GenerateResource.Cache
 C:\Users\LABCOM\Desktop\Comcud62-master\Pong\Pong\obj\Debug\Pong.Form2.resources
+C:\Users\Admin\Desktop\C#\Comcud62\Pong2\Pong\Pong\bin\Debug\Pong.exe.config
+C:\Users\Admin\Desktop\C#\Comcud62\Pong2\Pong\Pong\bin\Debug\Pong.exe
+C:\Users\Admin\Desktop\C#\Comcud62\Pong2\Pong\Pong\bin\Debug\Pong.pdb
+C:\Users\Admin\Desktop\C#\Comcud62\Pong2\Pong\Pong\obj\Debug\Pong.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\C#\Comcud62\Pong2\Pong\Pong\obj\Debug\Pong.Form1.resources
+C:\Users\Admin\Desktop\C#\Comcud62\Pong2\Pong\Pong\obj\Debug\Pong.Form2.resources
+C:\Users\Admin\Desktop\C#\Comcud62\Pong2\Pong\Pong\obj\Debug\Pong.Properties.Resources.resources
+C:\Users\Admin\Desktop\C#\Comcud62\Pong2\Pong\Pong\obj\Debug\Pong.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\C#\Comcud62\Pong2\Pong\Pong\obj\Debug\Pong.exe
+C:\Users\Admin\Desktop\C#\Comcud62\Pong2\Pong\Pong\obj\Debug\Pong.pdb

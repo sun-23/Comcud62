@@ -84,18 +84,18 @@ namespace Pong
                 }
                 //isBallDown = false;
                 //isBallUp = false;
-                
             }
 
-            if (isBallUp)
+            if (isUp)
             {
                 positionBallY = -10; //ball go up
             }
-            else if (isBallDown)
+            else if (isDown)
             {
                 positionBallY = 10; //ball go down
             }
 
+            //Set positionBall
             Ball.Location = new Point(Ball.Location.X + positionBallX, Ball.Location.Y + positionBallY);
         }
 
