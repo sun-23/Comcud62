@@ -1,0 +1,17 @@
+C:\Users\Admin\AppData\Local\Temporary Projects\MediaPlayer\bin\Debug\MediaPlayer.exe
+C:\Users\Admin\AppData\Local\Temporary Projects\MediaPlayer\bin\Debug\MediaPlayer.pdb
+C:\Users\Admin\AppData\Local\Temporary Projects\MediaPlayer\bin\Debug\Interop.WMPLib.dll
+C:\Users\Admin\AppData\Local\Temporary Projects\MediaPlayer\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Admin\AppData\Local\Temporary Projects\MediaPlayer\obj\x86\Debug\Interop.WMPLib.dll
+C:\Users\Admin\AppData\Local\Temporary Projects\MediaPlayer\obj\x86\Debug\AxInterop.WMPLib.dll
+C:\Users\Admin\AppData\Local\Temporary Projects\MediaPlayer\obj\x86\Debug\MediaPlayer.csproj.ResolveComReference.cache
+C:\Users\Admin\AppData\Local\Temporary Projects\MediaPlayer\obj\x86\Debug\MediaPlayer.Form1.resources
+C:\Users\Admin\AppData\Local\Temporary Projects\MediaPlayer\obj\x86\Debug\MediaPlayer.Properties.Resources.resources
+C:\Users\Admin\AppData\Local\Temporary Projects\MediaPlayer\obj\x86\Debug\MediaPlayer.csproj.GenerateResource.Cache
+C:\Users\Admin\AppData\Local\Temporary Projects\MediaPlayer\obj\x86\Debug\MediaPlayer.exe
+C:\Users\Admin\AppData\Local\Temporary Projects\MediaPlayer\obj\x86\Debug\MediaPlayer.pdb
+C:\Users\Admin\Desktop\C#\Comcud62\MediaPlayer\MediaPlayer\obj\x86\Debug\Interop.WMPLib.dll
+C:\Users\Admin\Desktop\C#\Comcud62\MediaPlayer\MediaPlayer\obj\x86\Debug\AxInterop.WMPLib.dll
+C:\Users\Admin\Desktop\C#\Comcud62\MediaPlayer\MediaPlayer\obj\x86\Debug\MediaPlayer.csproj.ResolveComReference.cache
+C:\Users\Admin\Desktop\C#\Comcud62\MediaPlayer\MediaPlayer\obj\x86\Debug\MediaPlayer.exe
+C:\Users\Admin\Desktop\C#\Comcud62\MediaPlayer\MediaPlayer\obj\x86\Debug\MediaPlayer.pdb
